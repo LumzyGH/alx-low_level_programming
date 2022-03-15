@@ -19,14 +19,14 @@ int main(void)
 }
 $ amonkeyprogrammer@ubuntu:/debugging$
 $ amonkeyprogrammer@ubuntu:/debugging$ cat main.h
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 
 void positive_or_negative(int i);
 
-#endif /* HOLBERTON_H */
+#endif /* MAIN_H */
 $ amonkeyprogrammer@ubuntu:/debugging$ 
 $ amonkeyprogrammer@ubuntu:/debugging$ gcc -Wall -pedantic -Werror -Wextra positive_or_negative.c main.c
 $ amonkeyprogrammer@ubuntu:/debugging$ ./a.out
