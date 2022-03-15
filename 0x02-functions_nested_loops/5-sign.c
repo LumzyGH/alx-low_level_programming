@@ -1,17 +1,33 @@
+/*
+ * File: 5-sign.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
 
 /**
-  * _islower - Checks for lowercase character
-  * @c: The character to be checked
-  *
-  * Return: 1 for lowercase character or 0 for anything else
-  */
-int _islower(int c)
+ * print_sign - Prints the sign of a number.
+ * @n: The number of which the sign will be printed.
+ *
+ * Return: 1 if the number is greater than zero,
+ *         0 if the number is zero,
+ *         -1 if the number is less than zero.
+ */
+int print_sign(int n)
 {
-	if (c >= 97 && c <= 122)
+	if (n > 0)
 	{
+		_putchar('+');
 		return (1);
 	}
-
-	return (0);
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }

@@ -1,5 +1,5 @@
 /*
- * File: 0-holberton.c
+ * File: 0-main.c
  * Auth: Brennan D Baraban
  *
  */
